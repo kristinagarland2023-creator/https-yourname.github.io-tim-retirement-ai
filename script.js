@@ -458,9 +458,9 @@ function runQuotesSequence() {
 
 — ${q.name}`;
 
-    speak(q.text, () => {
+    speakCoworker(q.text, q.name, () => {
       setTimeout(() => {
-        speakCoworker(q.text, q.name, () => {
+        speak(q.reaction, () => {
           index++;
           setTimeout(showNextQuote, 1800);
         });
