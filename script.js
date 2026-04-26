@@ -208,11 +208,11 @@ const folders = [
     intro: "Opening Early Days. Look at this. The system was younger. The photos were grainier. The people: fantastic.",
     outro: "Early Days archive complete. No crashes detected. Only memories.",
     images: [
-      "images/early-days/100717_WalkForHope_1.jpg",
-      "images/early-days/DSC_0021.JPG",
-      "images/early-days/DSC_0625.JPG",
-      "images/early-days/IMG_7322.JPG",
-      "images/early-days/IMG_8110.jpg"
+      "early-days/100717_WalkForHope_1.jpg",
+      "early-days/DSC_0021.JPG",
+      "early-days/DSC_0625.JPG",
+      "early-days/IMG_7322.JPG",
+      "early-days/IMG_8110.jpg"
     ],
     lines: [
       "Ah yes. Classic pre pandemic energy.",
@@ -227,12 +227,12 @@ const folders = [
     intro: "Opening Team Memories. Ah, yes. The rare group-photo protocol. Everyone stands close together and pretends this was easy to organize.",
     outro: "Team Memories archive complete. Collective impact confirmed.",
     images: [
-      "images/team-memories/2023 City Park Flannel Color.jpg",
-      "images/team-memories/DSC_0067_2.jpg",
-      "images/team-memories/DSC_0079Sml.jpg",
-      "images/team-memories/IMG_6480.JPG",
-      "images/team-memories/MicrosoftTeams-image.png",
-      "images/team-memories/RFR_Group.jpg"
+      "team-memories/2023 City Park Flannel Color.jpg",
+      "team-memories/DSC_0067_2.jpg",
+      "team-memories/DSC_0079Sml.jpg",
+      "team-memories/IMG_6480.JPG",
+      "team-memories/MicrosoftTeams-image.png",
+      "team-memories/RFR_Group.jpg"
     ],
     lines: [
       "Teamwork detected. Also possibly matching shirts.",
@@ -248,15 +248,15 @@ const folders = [
     intro: "Opening Work Moments. Observe the natural habitat: computers, conference rooms, cables, and the quiet hope that everything just works.",
     outro: "Work Moments archive complete. Systems survived. Mostly.",
     images: [
-      "images/work-moments/2.jpg",
-      "images/work-moments/Image (1).jpeg",
-      "images/work-moments/IMG_3019.jpeg",
-      "images/work-moments/IMG_3021.jpeg",
-      "images/work-moments/IMG_3027.jpg",
-      "images/work-moments/Lobby Discussion 2.jpg",
-      "images/work-moments/Lobby-Discussion-1.jpg",
-      "images/work-moments/MicrosoftTeams-image (6).png",
-      "images/work-moments/MicrosoftTeams-image (14).png"
+      "work-moments/2.jpg",
+      "work-moments/Image (1).jpeg",
+      "work-moments/IMG_3019.jpeg",
+      "work-moments/IMG_3021.jpeg",
+      "work-moments/IMG_3027.jpg",
+      "work-moments/Lobby Discussion 2.jpg",
+      "work-moments/Lobby-Discussion-1.jpg",
+      "work-moments/MicrosoftTeams-image (6).png",
+      "work-moments/MicrosoftTeams-image (14).png"
     ],
     lines: [
       "Sass levels detected, levels too hot to measure.",
@@ -275,10 +275,10 @@ const folders = [
     intro: "Opening Sassineese. Warning. Linguistic anomaly detected. Translation engine is nervous.",
     outro: "Sassineese archive complete. Meaning unclear. Impact undeniable.",
     images: [
-      "images/sassineese/314383229_842229816965423_7700937973461292401_n.jpg",
-      "images/sassineese/DSC_0741.JPG",
-      "images/sassineese/Tim.jpg",
-      "images/sassineese/Tim.png"
+      "sassineese/314383229_842229816965423_7700937973461292401_n.jpg",
+      "sassineese/DSC_0741.JPG",
+      "sassineese/Tim.jpg",
+      "sassineese/Tim.png"
     ],
     lines: [
       "Analysis suggests Sassineese cannot be taught. It can only be survived.",
