@@ -513,7 +513,7 @@ function runSassineeseSequence() {
     }
   );
 
-function showNextSample() {
+  function showNextSample() {
     if (index >= sassSamples.length) {
       setTimeout(() => {
         runSuperpowers();
@@ -532,53 +532,44 @@ ${s.context || ""}
 Translation attempt:
 "${s.translation}"`;
 
-if (s.text.includes("Steph:") && s.text.includes("Tim:")) {
-  speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
-    setTimeout(() => {
-      speakTim("I do things I've never done before every day.", () => {
+    if (s.text.includes("Steph:") && s.text.includes("Tim:")) {
+      speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
         setTimeout(() => {
-          speak("Translation attempt complete.", () => {
-            index++;
-            setTimeout(showNextSample, 1500);
+          speakTim("I do things I've never done before every day.", () => {
+            setTimeout(() => {
+              speak("Translation attempt complete.", () => {
+                index++;
+                setTimeout(showNextSample, 1500);
+              });
+            }, 600);
           });
-        }, 600);
+        }, 400);
       });
-    }, 400);
-  });
-} else if (s.text.includes("'Just'") && s.text.includes("So is 'Sass'")) {
-  speakTim("Just is a four letter word.", () => {
-    setTimeout(() => {
-      speakSteph("So is Sass.", () => {
-        setTimeout(() => {
-          speak("Translation attempt complete.", () => {
-            index++;
-            setTimeout(showNextSample, 1500);
-          });
-        }, 600);
-      });
-    }, 400);
-  });
-}
-        setTimeout(() => {
-          speak("Translation attempt complete.", () => {
-            index++;
-            setTimeout(showNextSample, 1500);
-          });
-        }, 600);
-      });
-    }, 400);
-  });
-} else {
-  speak(s.text, () => {
-    setTimeout(() => {
-      speak("Translation attempt complete.", () => {
-        index++;
-        setTimeout(showNextSample, 1500);
-      });
-    }, 600);
-  });
-}
 
+    } else if (s.text.includes("'Just'") && s.text.includes("So is 'Sass'")) {
+      speakTim("Just is a four letter word.", () => {
+        setTimeout(() => {
+          speakSteph("So is Sass.", () => {
+            setTimeout(() => {
+              speak("Translation attempt complete.", () => {
+                index++;
+                setTimeout(showNextSample, 1500);
+              });
+            }, 600);
+          });
+        }, 400);
+      });
+
+    } else {
+      speak(s.text, () => {
+        setTimeout(() => {
+          speak("Translation attempt complete.", () => {
+            index++;
+            setTimeout(showNextSample, 1500);
+          });
+        }, 600);
+      });
+    }
   }
 }
 
