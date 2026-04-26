@@ -558,6 +558,15 @@ if (s.text.includes("Steph:") && s.text.includes("Tim:")) {
       });
     }, 400);
   });
+        setTimeout(() => {
+          speak("Translation attempt complete.", () => {
+            index++;
+            setTimeout(showNextSample, 1500);
+          });
+        }, 600);
+      });
+    }, 400);
+  });
 } else {
   speak(s.text, () => {
     setTimeout(() => {
