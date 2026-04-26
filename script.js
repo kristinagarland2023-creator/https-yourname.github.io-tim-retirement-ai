@@ -136,13 +136,6 @@ function speakCoworker(text, name, onEnd) {
   speechSynthesis.speak(speech);
 }
 
-  speech.onend = () => {
-    if (onEnd) onEnd();
-  };
-
-  speechSynthesis.cancel();
-  speechSynthesis.speak(speech);
-
 function typeCustomText(text, speed = 25, callback) {
   let i = 0;
   bootText.textContent = "";
