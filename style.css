@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  background: black;
+  color: #00ffcc;
+  font-family: "Courier New", monospace;
+  overflow: hidden;
+}
+
+/* Power screen */
+#power-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+}
+
+/* Power button */
+#power-button {
+  font-size: 80px;
+  padding: 40px;
+  border-radius: 50%;
+  border: 4px solid red;
+  background: black;
+  color: red;
+  cursor: pointer;
+  box-shadow: 0 0 30px red;
+  transition: 0.3s;
+}
+
+#power-button:hover {
+  box-shadow: 0 0 50px red;
+}
+
+#booting-text {
+  color: #00ff66;
+  font-size: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* MAIN SCREEN */
+#main-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Monitor */
+#monitor {
+  width: 80%;
+  max-width: 900px;
+  height: 78vh;
+  border: 14px solid #333;
+  border-radius: 20px;
+  background: #020b05;
+  box-shadow: 0 0 40px #00ff66;
+  padding: 30px;
+  overflow: hidden;
+}
+
+/* Boot text */
+#boot-text {
+  color: #00ff66;
+  font-size: 17px;
+  white-space: pre-wrap;
+  line-height: 1.25;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Memory board */
+.memory-board {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #00ff66;
+}
+
+.folder-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Photo board */
+.photo-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  height: 45vh;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Memory photos */
+.memory-photo {
+  width: 100%;
+  max-width: 200px;
+  height: 115px;
+  object-fit: cover;
+  border: 2px solid #00ff66;
+  box-shadow: 0 0 10px #00ff66;
+  transition: all 0.8s ease;
+  background: black;
+}
+
+/* Hide broken images */
+.memory-photo[src=""],
+.memory-photo:not([src]),
+.memory-photo[src*="undefined"] {
+  display: none;
+}
+
+/* Zoomed photo */
+.memory-photo.zoomed {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 75vw !important;
+  max-height: 65vh !important;
+  transform: translate(-50%, -50%) !important;
+  object-fit: contain !important;
+  z-index: 9999 !important;
+  border: 3px solid #00ff66;
+  box-shadow: 0 0 45px #00ff66;
+  background: black;
+}
+
+/* Menu */
+#menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  color: #00ff66;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.menu-item:hover {
+  color: white;
+}
+
+/* Desktop folders */
+#desktop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.folder {
+  text-align: center;
+  cursor: pointer;
+  color: #00ff66;
+  font-size: 18px;
+}
+
+.folder-icon {
+  font-size: 55px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.folder:hover {
+  color: white;
+}
+
+/* Final shutdown section */
+#finalSong {
+  margin-top: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ✅ CHANGED */
+#finalPowerWrapper {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ✅ CHANGED */
+#finalPowerButton {
+  font-size: 60px;
+  padding: 24px;
+  border-radius: 50%;
+  border: 4px solid #00ff66;
+  background: black;
+  color: #00ff66;
+  cursor: pointer;
+  box-shadow: 0 0 30px #00ff66;
+  transition: 0.3s;
+}
+
+#finalPowerButton:hover {
+  box-shadow: 0 0 60px #00ff66;
+}
+
+#finalInstruction {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #00ff66;
+}
+
+#officeQuestion {
+  margin-top: 10px;
+  text-align: center;
+  color: #00ff66;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+#officeQuestion.show {
+  opacity: 1;
+}
