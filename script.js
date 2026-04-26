@@ -278,7 +278,7 @@ const folders = [
       "sassineese/314383229_842229816965423_7700937973461292401_n.jpg",
       "sassineese/DSC_0741.JPG",
       "sassineese/Tim.jpg",
-      "sassineese/Tim.png"
+      "sassineese/TIm.png"
     ],
     lines: [
       "Analysis suggests Sassineese cannot be taught. It can only be survived.",
