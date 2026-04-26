@@ -513,6 +513,15 @@ function runSassineeseSequence() {
     }
   );
 
+  function finishSample(s) {
+    setTimeout(() => {
+      speak(`Translation attempt: ${s.translation}`, () => {
+        index++;
+        setTimeout(showNextSample, 1500);
+      });
+    }, 600);
+  }
+
   function showNextSample() {
     if (index >= sassSamples.length) {
       setTimeout(() => {
@@ -536,12 +545,7 @@ Translation attempt:
       speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
         setTimeout(() => {
           speakTim("I do things I've never done before every day.", () => {
-            setTimeout(() => {
-              speak("Translation attempt complete.", () => {
-                index++;
-                setTimeout(showNextSample, 1500);
-              });
-            }, 600);
+            finishSample(s);
           });
         }, 400);
       });
@@ -550,29 +554,18 @@ Translation attempt:
       speakTim("Just is a four letter word.", () => {
         setTimeout(() => {
           speakSteph("So is Sass.", () => {
-            setTimeout(() => {
-              speak("Translation attempt complete.", () => {
-                index++;
-                setTimeout(showNextSample, 1500);
-              });
-            }, 600);
+            finishSample(s);
           });
         }, 400);
       });
 
     } else {
       speak(s.text, () => {
-        setTimeout(() => {
-          speak("Translation attempt complete.", () => {
-            index++;
-            setTimeout(showNextSample, 1500);
-          });
-        }, 600);
+        finishSample(s);
       });
     }
   }
 }
-
 function runSuperpowers() {
   typeCustomText(`Initiating behavioral analysis...
 
