@@ -558,6 +558,7 @@ if (s.text.includes("Steph:") && s.text.includes("Tim:")) {
       });
     }, 400);
   });
+}
         setTimeout(() => {
           speak("Translation attempt complete.", () => {
             index++;
