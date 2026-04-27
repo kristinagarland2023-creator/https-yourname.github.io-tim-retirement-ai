@@ -541,25 +541,25 @@ ${s.context || ""}
 Translation attempt:
 "${s.translation}"`;
 
-    if (s.text.includes("I feel like I'm always asking you") && s.text.includes("I do things I've never done before every day")) {
-      speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
-        setTimeout(() => {
-          speakTim("I do things I've never done before every day.", () => {
-            finishSample(s);
-          });
-        }, 400);
+    if (s.text.includes("'Just'") && s.text.includes("So is 'Sass'")) {
+  speakTim("Just is a four letter word.", () => {
+    setTimeout(() => {
+      speakSteph("So is Sass.", () => {
+        finishSample(s);
       });
+    }, 400);
+  });
 
-    } else if (s.text.includes("'Just'") && s.text.includes("So is 'Sass'")) {
-      speakTim("Just is a four letter word.", () => {
-        setTimeout(() => {
-          speakSteph("So is Sass.", () => {
-            finishSample(s);
-          });
-        }, 400);
+} else if (s.text.includes("I feel like I'm always asking you") && s.text.includes("I do things I've never done before every day")) {
+  speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
+    setTimeout(() => {
+      speakTim("I do things I've never done before every day.", () => {
+        finishSample(s);
       });
+    }, 400);
+  });
 
-    } else {
+} else {
       speak(s.text, () => {
         finishSample(s);
       });
