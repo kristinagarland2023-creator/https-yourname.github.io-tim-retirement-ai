@@ -244,7 +244,7 @@ const folders = [
 ],
     lines: [
       "Workplace bonding detected. Sassineese likely used to communicate.",
-      "Someone here has most likely asked, have you tried turning it off and back on?",
+      "Analysis suggests IT doesn’t make mistakes. They just create unexpected features.",
       "Musical talent detected. Fantastic."
     ]
   },
@@ -259,8 +259,7 @@ const folders = [
 ],
     lines: [
       "Analysis suggests Sassineese cannot be taught. It can only be survived.",
-      "Tim not detected. Only contribution to sass levels rising.",
-      "IT doesn’t make mistakes. They just create unexpected features.",
+      "Someone here has most likely asked, have you tried turning it off and back on?",
       "Primary subject identified. Ah... there he is. Confirmation received. That is, unmistakably, the source of Sassineese."
     ]
   }
