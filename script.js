@@ -222,7 +222,7 @@ const folders = [
       "team-memories/RTSBrstCncrWlk100618.jpg"
     ],
     lines: [
-      "System detects possible coordination.",
+      "System detects possible clothing coordination.",
       "Everything appears normal. This is deeply concerning.",
       "Data suggests this will be remembered."
     ]
