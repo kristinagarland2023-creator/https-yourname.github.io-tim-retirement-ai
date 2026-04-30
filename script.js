@@ -228,9 +228,9 @@ const folders = [
   "team-memories/RTSBrstCncrWlk100618.jpg"
 ],
     lines: [
-  "Teamwork detected. Also possibly matching shirts.",
-  "Everyone appears cheerful. This is statistically suspicious.",
-  "Team formation detected. Coordination level: surprisingly high."
+  "Coordinated flannel shirts is highly possible.",
+  "A classic configuration.",
+  "Chaos levels contained."
 ],
   },
   {
