@@ -219,20 +219,21 @@ const folders = [
     ]
   },
   {
-    name: "Team Memories",
-    intro: "Opening Team Memories. Ah, yes. Everyone stands close together and pretends this was easy to organize.",
-    outro: "Team Memories archive complete. Collective impact confirmed.",
-    images: [
-      "team-memories/2023 City Park Flannel Color.jpg",
-      "team-memories/RFR_Group.jpg",
-      "team-memories/RTSBrstCncrWlk100618.jpg"
-    ],
-    lines: [
-  "System detects possible coordination.",
-  "Everything appears normal. This is deeply concerning.",
-  "Data suggests this will be remembered."
-],
-  },
+    {
+  name: "Team Memories",
+  intro: "Opening Team Memories. Ah, yes. Everyone stands close together and pretends this was easy to organize.",
+  outro: "Team Memories archive complete. Collective impact confirmed.",
+  images: [
+    "team-memories/2023 City Park Flannel Color.jpg",
+    "team-memories/RFR_Group.jpg",
+    "team-memories/RTSBrstCncrWlk100618.jpg"
+  ],
+  lines: [
+    "System detects possible coordination.",
+    "Everything appears normal. This is deeply concerning.",
+    "Data suggests this will be remembered."
+  ]
+},
   {
     name: "Work Moments",
     intro: "Opening Work Moments. Observe the natural habitat: computers, conference rooms, cables, and the quiet hope that everything just works.",
