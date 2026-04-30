@@ -208,14 +208,14 @@ const folders = [
     intro: "Opening Early Days. Look at this. The system was younger. The photos were grainier. The people: fantastic.",
     outro: "Early Days archive complete. No crashes detected. Only memories.",
     images: [
-  "early-days/DSC_0021.JPG",
-  "early-days/IMG_7322.JPG",
-  "early-days/IMG_8110.jpg"
-],
+      "early-days/DSC_0021.JPG",
+      "early-days/IMG_7322.JPG",
+      "early-days/IMG_8110.jpg"
+    ],
     lines: [
       "Historical note: everyone appears to be functioning within acceptable levels of chaos.",
       "A fantastic collection of humans and questionable camera timing.",
-      "Everyone appears cheerful. This is statistically suspicious.",
+      "Everyone appears cheerful. This is statistically suspicious."
     ]
   },
   {
@@ -223,25 +223,25 @@ const folders = [
     intro: "Opening Team Memories. Ah, yes. The rare group-photo protocol. Everyone stands close together and pretends this was easy to organize.",
     outro: "Team Memories archive complete. Collective impact confirmed.",
     images: [
-  "team-memories/2023 City Park Flannel Color.jpg",
-  "team-memories/RFR_Group.jpg",
-  "team-memories/RTSBrstCncrWlk100618.jpg"
-],
+      "team-memories/2023 City Park Flannel Color.jpg",
+      "team-memories/RFR_Group.jpg",
+      "team-memories/RTSBrstCncrWlk100618.jpg"
+    ],
     lines: [
-  "Coordinated flannel shirts is highly possible.",
-  "A classic configuration.",
-  "Chaos levels contained."
-],
+      "Teamwork detected. Also possibly matching shirts.",
+      "Team formation detected. Coordination level: surprisingly high.",
+      "Everyone appears cheerful. This is statistically suspicious."
+    ]
   },
   {
     name: "Work Moments",
     intro: "Opening Work Moments. Observe the natural habitat: computers, conference rooms, cables, and the quiet hope that everything just works.",
     outro: "Work Moments archive complete. Systems survived. Mostly.",
     images: [
-  "work-moments/IMG_3027.jpg",
-  "work-moments/Image (1).jpeg",
-  "work-moments/MicrosoftTeams-image (14).png"
-],
+      "work-moments/IMG_3027.jpg",
+      "work-moments/Image (1).jpeg",
+      "work-moments/MicrosoftTeams-image (14).png"
+    ],
     lines: [
       "Workplace bonding detected. Sassineese likely used to communicate.",
       "Analysis suggests IT doesn’t make mistakes. They just create unexpected features.",
@@ -253,10 +253,10 @@ const folders = [
     intro: "Opening Sassineese. Warning. Linguistic anomaly detected. Translation engine is nervous.",
     outro: "Sassineese archive complete. Meaning unclear. Impact undeniable.",
     images: [
-  "sassineese/DSC_0741.JPG",
-  "sassineese/Tim.png",
-  "sassineese/314383229_842229816965423_7700937973461292401_n.jpg"
-],
+      "sassineese/DSC_0741.JPG",
+      "sassineese/Tim.png",
+      "sassineese/314383229_842229816965423_7700937973461292401_n.jpg"
+    ],
     lines: [
       "Someone here has most likely asked, have you tried turning it off and back on?",
       "Analysis suggests Sassineese cannot be taught. It can only be survived.",
