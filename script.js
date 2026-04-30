@@ -230,7 +230,7 @@ const folders = [
     lines: [
       "System detects possible coordination.",
       "Everything appears normal. This is deeply concerning.",
-      "Data suggests this will be remembered.”
+      "Data suggests this will be remembered."
     ]
   },
   {
