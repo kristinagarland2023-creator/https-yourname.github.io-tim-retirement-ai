@@ -208,12 +208,10 @@ const folders = [
     intro: "Opening Early Days. Look at this. The system was younger. The photos were grainier. The people: fantastic.",
     outro: "Early Days archive complete. No crashes detected. Only memories.",
     images: [
-      "early-days/100717_WalkForHope_1.jpg",
-      "early-days/DSC_0021.JPG",
-      "early-days/DSC_0625.JPG",
-      "early-days/IMG_7322.JPG",
-      "early-days/IMG_8110.jpg"
-    ],
+  "early-days/DSC_0021.JPG",
+  "early-days/IMG_7322.JPG",
+  "early-days/IMG_8110.jpg"
+],
     lines: [
       "Ah yes. Classic pre pandemic energy.",
       "Historical note: everyone appears to be functioning within acceptable levels of chaos.",
