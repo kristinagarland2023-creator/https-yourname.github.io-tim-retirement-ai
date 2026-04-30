@@ -264,11 +264,10 @@ const folders = [
     intro: "Opening Sassineese. Warning. Linguistic anomaly detected. Translation engine is nervous.",
     outro: "Sassineese archive complete. Meaning unclear. Impact undeniable.",
     images: [
-      "sassineese/314383229_842229816965423_7700937973461292401_n.jpg",
-      "sassineese/DSC_0741.JPG",
-      "sassineese/Tim.jpg",
-      "sassineese/TIm.png"
-    ],
+  "sassineese/DSC_0741.JPG",
+  "sassineese/Tim.png",
+  "sassineese/314383229_842229816965423_7700937973461292401_n.jpg"
+],
     lines: [
       "Analysis suggests Sassineese cannot be taught. It can only be survived.",
       "Tim not detected. Only contribution to sass levels rising.",
