@@ -228,9 +228,9 @@ const folders = [
       "team-memories/RTSBrstCncrWlk100618.jpg"
     ],
     lines: [
-      "Teamwork detected. Evidence measured with an impressive number of matching flannels.",
-      "Team formation detected. Coordination level: surprisingly high.",
-      "Everyone appears cheerful. This is statistically suspicious."
+      "System detects possible coordination.",
+      "Everything appears normal. This is deeply concerning.",
+      "Data suggests this will be remembered.”
     ]
   },
   {
@@ -245,7 +245,7 @@ const folders = [
     lines: [
       "Workplace bonding detected. Sassineese likely used to communicate.",
       "Analysis suggests IT doesn’t make mistakes. They just create unexpected features.",
-      "Musical talent detected. Fantastic."
+      "Musical talent identified. System impressed."
     ]
   },
   {
