@@ -258,8 +258,8 @@ const folders = [
   "sassineese/314383229_842229816965423_7700937973461292401_n.jpg"
 ],
     lines: [
-      "Analysis suggests Sassineese cannot be taught. It can only be survived.",
       "Someone here has most likely asked, have you tried turning it off and back on?",
+      "Analysis suggests Sassineese cannot be taught. It can only be survived.",
       "Primary subject identified. Ah... there he is. Confirmation received. That is, unmistakably, the source of Sassineese."
     ]
   }
