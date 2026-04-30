@@ -230,13 +230,10 @@ const folders = [
   "team-memories/RTSBrstCncrWlk100618.jpg"
 ],
     lines: [
-      "Teamwork detected. Also possibly matching shirts.",
-      "Everyone appears cheerful. This is statistically suspicious.",
-      "Coordinated group energy confirmed.",
-      "Probability someone asked when lunch starts: elevated.",
-      "Ah, the classic team photo formation. Nobody knows where to put their hands.",
-      "This one has strong office-family energy."
-    ]
+  "Teamwork detected. Also possibly matching shirts.",
+  "Everyone appears cheerful. This is statistically suspicious.",
+  "Team formation detected. Coordination level: surprisingly high."
+],
   },
   {
     name: "Work Moments",
