@@ -248,16 +248,10 @@ const folders = [
     intro: "Opening Work Moments. Observe the natural habitat: computers, conference rooms, cables, and the quiet hope that everything just works.",
     outro: "Work Moments archive complete. Systems survived. Mostly.",
     images: [
-      "work-moments/2.jpg",
-      "work-moments/Image (1).jpeg",
-      "work-moments/IMG_3019.jpeg",
-      "work-moments/IMG_3021.jpeg",
-      "work-moments/IMG_3027.jpg",
-      "work-moments/Lobby Discussion 2.jpg",
-      "work-moments/Lobby-Discussion-1.jpg",
-      "work-moments/MicrosoftTeams-image (6).png",
-      "work-moments/MicrosoftTeams-image (14).png"
-    ],
+  "work-moments/IMG_3027.jpg",
+  "work-moments/Image (1).jpeg",
+  "work-moments/MicrosoftTeams-image (14).png"
+],
     lines: [
       "Sass levels detected, levels too hot to measure.",
       "Shenanigans detected.",
