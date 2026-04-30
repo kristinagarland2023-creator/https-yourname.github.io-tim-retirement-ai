@@ -205,7 +205,7 @@ function runMemorySequence() {
 const folders = [
   {
     name: "Early Days",
-    intro: "Opening Early Days. Look at this. The system was younger. The photos were grainier. The people: fantastic.",
+    intro: "Opening Early Days. The system was younger. The photos were grainier.",
     outro: "Early Days archive complete. No crashes detected. Only memories.",
     images: [
       "early-days/DSC_0021.JPG",
@@ -220,7 +220,7 @@ const folders = [
   },
   {
     name: "Team Memories",
-    intro: "Opening Team Memories. Ah, yes. The rare group-photo protocol. Everyone stands close together and pretends this was easy to organize.",
+    intro: "Opening Team Memories. Ah, yes. Everyone stands close together and pretends this was easy to organize.",
     outro: "Team Memories archive complete. Collective impact confirmed.",
     images: [
       "team-memories/2023 City Park Flannel Color.jpg",
@@ -228,7 +228,7 @@ const folders = [
       "team-memories/RTSBrstCncrWlk100618.jpg"
     ],
     lines: [
-      "Teamwork detected. Also possibly matching shirts.",
+      "Teamwork detected. Evidence measured with an impressive number of matching flannels.",
       "Team formation detected. Coordination level: surprisingly high.",
       "Everyone appears cheerful. This is statistically suspicious."
     ]
