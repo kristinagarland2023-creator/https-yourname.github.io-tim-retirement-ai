@@ -228,20 +228,20 @@ const folders = [
       "team-memories/RTSBrstCncrWlk100618.jpg"
     ],
     lines: [
-      "System detects possible coordination.",
-      "Everything appears normal. This is deeply concerning.",
-      "Data suggests this will be remembered."
-    ]
+  "System detects possible coordination.",
+  "Everything appears normal. This is deeply concerning.",
+  "Data suggests this will be remembered."
+],
   },
   {
     name: "Work Moments",
     intro: "Opening Work Moments. Observe the natural habitat: computers, conference rooms, cables, and the quiet hope that everything just works.",
     outro: "Work Moments archive complete. Systems survived. Mostly.",
     images: [
-      "work-moments/IMG_3027.jpg",
-      "work-moments/Image2.jpg",
-      "work-moments/MicrosoftTeams-image (14).png"
-    ],
+  "work-moments/IMG_3027.jpg",
+  "work-moments/Image (1).jpeg",
+  "work-moments/MicrosoftTeams-image (14).png"
+],
     lines: [
       "Workplace bonding detected. Sassineese likely used to communicate.",
       "Analysis suggests IT doesn’t make mistakes. They just create unexpected features.",
