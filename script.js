@@ -18,31 +18,39 @@ typingSound.volume = 0.5;
 const closingSong = new Audio("./sounds/closing-time.mp3");
 closingSong.volume = 0.7;
 
-finalPowerButton.addEventListener("click", () => {
-  finalPowerButton.style.color = "red";
-  finalPowerButton.style.borderColor = "red";
-  finalPowerButton.style.boxShadow = "0 0 30px red";
+if (finalPowerButton) {
+  finalPowerButton.addEventListener("click", () => {
+    finalPowerButton.style.color = "red";
+    finalPowerButton.style.borderColor = "red";
+    finalPowerButton.style.boxShadow = "0 0 30px red";
 
-document.getElementById("monitor").style.opacity = "0.6";
+    const monitor = document.getElementById("monitor");
 
-  setTimeout(() => {
-    document.getElementById("monitor").style.opacity = "1";
-  }, 150);
+    if (monitor) {
+      monitor.style.opacity = "0.6";
 
-  closingSong.play()
-    .then(() => {
-      speak("Have you ever seen The Office?");
-    })
-    .catch((error) => {
-      console.log("Song failed to play:", error);
-      speak("Have you ever seen The Office?");
-    });
+      setTimeout(() => {
+        monitor.style.opacity = "1";
+      }, 150);
+    }
 
-  setTimeout(() => {
-    officeQuestion.classList.remove("hidden");
-    officeQuestion.classList.add("show");
-  }, 1200);
-});
+    closingSong.play()
+      .then(() => {
+        speak("Have you ever seen The Office?");
+      })
+      .catch((error) => {
+        console.log("Song failed to play:", error);
+        speak("Have you ever seen The Office?");
+      });
+
+    setTimeout(() => {
+      if (officeQuestion) {
+        officeQuestion.classList.remove("hidden");
+        officeQuestion.classList.add("show");
+      }
+    }, 1200);
+  });
+}
 
 function speak(text, onEnd) {
   const speech = new SpeechSynthesisUtterance(text);
@@ -60,7 +68,6 @@ function speak(text, onEnd) {
 
 function speakTim(text, onEnd) {
   const speech = new SpeechSynthesisUtterance(text);
-
   speech.lang = "en-US";
   speech.rate = 0.95;
   speech.pitch = 0.85;
@@ -75,7 +82,6 @@ function speakTim(text, onEnd) {
 
 function speakSteph(text, onEnd) {
   const speech = new SpeechSynthesisUtterance(text);
-
   speech.lang = "en-US";
   speech.rate = 1.1;
   speech.pitch = 1.4;
@@ -94,35 +100,23 @@ function speakCoworker(text, name, onEnd) {
   speech.lang = "en-US";
 
   if (name === "Tim Hiller") {
-    // Deep, calm, leader energy
     speech.rate = 0.85;
     speech.pitch = 0.7;
-
   } else if (name === "Jeffrey Demuth") {
-    // Friendly storyteller
     speech.rate = 1.1;
     speech.pitch = 1.3;
-
   } else if (name === "Kaylie Belland") {
-    // Warm, emotional
     speech.rate = 1.0;
     speech.pitch = 1.5;
-
   } else if (name === "Michelle Sabo") {
-    // Thoughtful, steady
     speech.rate = 0.95;
     speech.pitch = 1.2;
-
   } else if (name === "Noah Wilde") {
-    // Slightly playful / casual
     speech.rate = 1.2;
     speech.pitch = 1.6;
-
   } else if (name === "Scott Miller") {
-    // Calm, grounded
     speech.rate = 0.8;
     speech.pitch = 0.9;
-
   } else {
     speech.rate = 1;
     speech.pitch = 1;
@@ -219,30 +213,29 @@ const folders = [
     ]
   },
   {
-    {
-  name: "Team Memories",
-  intro: "Opening Team Memories. Ah, yes. Everyone stands close together and pretends this was easy to organize.",
-  outro: "Team Memories archive complete. Collective impact confirmed.",
-  images: [
-    "team-memories/2023 City Park Flannel Color.jpg",
-    "team-memories/RFR_Group.jpg",
-    "team-memories/RTSBrstCncrWlk100618.jpg"
-  ],
-  lines: [
-    "System detects possible coordination.",
-    "Everything appears normal. This is deeply concerning.",
-    "Data suggests this will be remembered."
-  ]
-},
+    name: "Team Memories",
+    intro: "Opening Team Memories. Ah, yes. Everyone stands close together and pretends this was easy to organize.",
+    outro: "Team Memories archive complete. Collective impact confirmed.",
+    images: [
+      "team-memories/2023 City Park Flannel Color.jpg",
+      "team-memories/RFR_Group.jpg",
+      "team-memories/RTSBrstCncrWlk100618.jpg"
+    ],
+    lines: [
+      "System detects possible coordination.",
+      "Everything appears normal. This is deeply concerning.",
+      "Data suggests this will be remembered."
+    ]
+  },
   {
     name: "Work Moments",
     intro: "Opening Work Moments. Observe the natural habitat: computers, conference rooms, cables, and the quiet hope that everything just works.",
     outro: "Work Moments archive complete. Systems survived. Mostly.",
     images: [
-  "work-moments/IMG_3027.jpg",
-  "work-moments/Image (1).jpeg",
-  "work-moments/MicrosoftTeams-image (14).png"
-],
+      "work-moments/IMG_3027.jpg",
+      "work-moments/Image (1).jpeg",
+      "work-moments/MicrosoftTeams-image (14).png"
+    ],
     lines: [
       "Workplace bonding detected. Sassineese likely used to communicate.",
       "Analysis suggests IT doesn’t make mistakes. They just create unexpected features.",
@@ -255,7 +248,7 @@ const folders = [
     outro: "Sassineese archive complete. Meaning unclear. Impact undeniable.",
     images: [
       "sassineese/DSC_0741.JPG",
-      "sassineese/Tlm.png",
+      "sassineese/TIm.png",
       "sassineese/314383229_842229816965423_7700937973461292401_n.jpg"
     ],
     lines: [
@@ -326,7 +319,7 @@ function runFolderPhotos(folder) {
     }
   }
 
-setTimeout(zoomNextPhoto, 800);
+  setTimeout(zoomNextPhoto, 800);
 }
 
 function endSequence() {
@@ -519,30 +512,29 @@ Translation attempt:
 "${s.translation}"`;
 
     if (s.text.includes("'Just'") && s.text.includes("So is 'Sass'")) {
-  speakTim("Just is a four letter word.", () => {
-    setTimeout(() => {
-      speakSteph("So is Sass.", () => {
-        finishSample(s);
+      speakTim("Just is a four letter word.", () => {
+        setTimeout(() => {
+          speakSteph("So is Sass.", () => {
+            finishSample(s);
+          });
+        }, 400);
       });
-    }, 400);
-  });
-
-} else if (s.text.includes("I feel like I'm always asking you") && s.text.includes("I do things I've never done before every day")) {
-  speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
-    setTimeout(() => {
-      speakTim("I do things I've never done before every day.", () => {
-        finishSample(s);
+    } else if (s.text.includes("I feel like I'm always asking you") && s.text.includes("I do things I've never done before every day")) {
+      speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
+        setTimeout(() => {
+          speakTim("I do things I've never done before every day.", () => {
+            finishSample(s);
+          });
+        }, 400);
       });
-    }, 400);
-  });
-
-} else {
+    } else {
       speak(s.text, () => {
         finishSample(s);
       });
     }
   }
 }
+
 function runSuperpowers() {
   typeCustomText(`Initiating behavioral analysis...
 
@@ -572,7 +564,9 @@ function runFinalEnding() {
   typingSound.pause();
   typingSound.currentTime = 0;
 
-  finalSong.classList.add("hidden");
+  if (finalSong) {
+    finalSong.classList.add("hidden");
+  }
 
   showFinalPage(`Initiating final logout sequence...
 
@@ -652,7 +646,10 @@ Press power to complete shutdown.`);
                               `;
 
                               bootText.style.height = "auto";
-                              finalSong.classList.remove("hidden");
+
+                              if (finalSong) {
+                                finalSong.classList.remove("hidden");
+                              }
                             }, 800);
                           });
                         }, 1500);
