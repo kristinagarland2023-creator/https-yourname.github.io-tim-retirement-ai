@@ -243,8 +243,8 @@ const folders = [
   "work-moments/MicrosoftTeams-image (14).png"
 ],
     lines: [
-      "Someone here has absolutely asked, have you tried turning it off and back on?",
       "Workplace bonding detected. Sassineese likely used to communicate.",
+      "Someone here has most likely asked, have you tried turning it off and back on?",
       "Musical talent detected. Fantastic."
     ]
   },
