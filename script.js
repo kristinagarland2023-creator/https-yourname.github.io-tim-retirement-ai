@@ -254,7 +254,7 @@ const folders = [
     outro: "Sassineese archive complete. Meaning unclear. Impact undeniable.",
     images: [
       "sassineese/DSC_0741.JPG",
-      "sassineese/TIm.png",
+      "sassineese/Tlm.png",
       "sassineese/314383229_842229816965423_7700937973461292401_n.jpg"
     ],
     lines: [
