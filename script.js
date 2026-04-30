@@ -225,13 +225,10 @@ const folders = [
     intro: "Opening Team Memories. Ah, yes. The rare group-photo protocol. Everyone stands close together and pretends this was easy to organize.",
     outro: "Team Memories archive complete. Collective impact confirmed.",
     images: [
-      "team-memories/2023 City Park Flannel Color.jpg",
-      "team-memories/DSC_0067_2.jpg",
-      "team-memories/DSC_0079Sml.jpg",
-      "team-memories/IMG_6480.JPG",
-      "team-memories/MicrosoftTeams-image.png",
-      "team-memories/RFR_Group.jpg"
-    ],
+  "team-memories/2023 City Park Flannel Color.jpg",
+  "team-memories/RFR_Group.jpg",
+  "team-memories/RTSBrstCncrWlk100618.jpg"
+],
     lines: [
       "Teamwork detected. Also possibly matching shirts.",
       "Everyone appears cheerful. This is statistically suspicious.",
