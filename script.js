@@ -213,11 +213,9 @@ const folders = [
   "early-days/IMG_8110.jpg"
 ],
     lines: [
-      "Ah yes. Classic pre pandemic energy.",
       "Historical note: everyone appears to be functioning within acceptable levels of chaos.",
       "A fantastic collection of humans and questionable camera timing.",
-      "Probability something needs to be fixed when lunch starts: elevated.",
-      "Confirmed. The legend was already loading."
+      "Everyone appears cheerful. This is statistically suspicious.",
     ]
   },
   {
