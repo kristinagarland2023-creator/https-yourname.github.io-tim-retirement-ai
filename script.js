@@ -233,7 +233,7 @@ const folders = [
     outro: "Work Moments archive complete. Systems survived. Mostly.",
     images: [
       "work-moments/IMG_3027.jpg",
-      "work-moments/Image (1).jpeg",
+      "work-moments/Image2.jpg",
       "work-moments/MicrosoftTeams-image (14).png"
     ],
     lines: [
