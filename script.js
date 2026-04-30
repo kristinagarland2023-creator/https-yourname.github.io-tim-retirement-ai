@@ -243,12 +243,6 @@ const folders = [
   "work-moments/MicrosoftTeams-image (14).png"
 ],
     lines: [
-      "Sass levels detected, levels too hot to measure.",
-      "Shenanigans detected.",
-      "A classic configuration.",
-      "This appears to be a work moment. The system senses snacks nearby.",
-      "Technical patience levels appear above normal human specifications.",
-      "Observation. Someone likely said, say cheese.",
       "Someone here has absolutely asked, have you tried turning it off and back on?",
       "Workplace bonding detected. Sassineese likely used to communicate.",
       "Musical talent detected. Fantastic."
