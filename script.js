@@ -447,33 +447,31 @@ const sassSamples = [
   {
     text: `"You can play with your light dimmer too!"`,
     context: "— Tim Sass to Kevin Hogan",
-    translation: "Technical adjustment available. Emotional judgment withheld."
   },
   {
     text: `"No Stephanie, that does not sound reasonable."`,
-    translation: "Proposal evaluated. Logical integrity not detected."
+    context: "— Tim Sass to Stephanie Earleywine"
   },
   {
-    text: `Steph: "I feel like I'm always asking you to program something you've never done before."\nTim: "I do things I've never done before every day."`,
-    translation: "Novel problems are standard operating conditions."
-  },
+  text: `Steph: "I feel like I'm always asking you to program something you've never done before."\nTim: "I do things I've never done before every day."`,
+  context: "— Stephanie Earleywine to Tim Sass"
+},
   {
     text: `"I will not save your barbie house, we're not that close."`,
     context: "— Tim Sass to Kristie Elvehjem",
-    translation: "Request denied. Relationship threshold not met for intervention."
   },
   {
     text: `"I'm being optimistic, it's new for me."`,
-    translation: "Positive outlook initiated. System unfamiliar with this state."
+    context: "— Tim Sass"
   },
   {
     text: `"As I dig into this I noticed the HubbaBubba was wonky."`,
-    translation: "System component identified as unstable. Terminology remains unclear."
+    context: "— Tim Sass"
   },
-  {
-    text: `Tim: "'Just' is a four letter word."\nSteph: "So is 'Sass'."`,
-    translation: "System no longer certain who is in control."
-  }
+ {
+  text: `Tim: "'Just' is a four letter word."\nSteph: "So is 'Sass'."`,
+  context: "— Tim to Stephanie Earleywine"
+}
 ];
 
 function runSassineeseSequence() {
@@ -487,14 +485,12 @@ function runSassineeseSequence() {
     }
   );
 
-  function finishSample(s) {
-    setTimeout(() => {
-      speak(`Translation attempt: ${s.translation}`, () => {
-        index++;
-        setTimeout(showNextSample, 1500);
-      });
-    }, 600);
-  }
+  function finishSample() {
+  setTimeout(() => {
+    index++;
+    setTimeout(showNextSample, 1500);
+  }, 600);
+}
 
   function showNextSample() {
     if (index >= sassSamples.length) {
@@ -512,14 +508,11 @@ ${s.text}
 
 ${s.context || ""}
 
-Translation attempt:
-"${s.translation}"`;
-
     if (s.text.includes("'Just'") && s.text.includes("So is 'Sass'")) {
       speakTim("Just is a four letter word.", () => {
         setTimeout(() => {
           speakSteph("So is Sass.", () => {
-            finishSample(s);
+            finishSample();
           });
         }, 400);
       });
@@ -527,13 +520,13 @@ Translation attempt:
       speakSteph("I feel like I'm always asking you to program something you've never done before.", () => {
         setTimeout(() => {
           speakTim("I do things I've never done before every day.", () => {
-            finishSample(s);
+            finishSample();
           });
         }, 400);
       });
     } else {
       speak(s.text, () => {
-        finishSample(s);
+        finishSample();
       });
     }
   }
