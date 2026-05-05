@@ -388,10 +388,14 @@ Best wishes for your next chapter Tim.`,
     reaction: "Statement recorded. Knowledge transfer confirmed."
   },
   {
-    text: `Can I just pretend Tim isn't retiring because it makes me sad.`,
-    name: "Noah Wilde",
-    reaction: "Statement recorded. Emotional resistance detected. System response: understandable."
-  },
+  text: `Tim has taught, and retaught, me just about everything I do.
+
+The Cargill Blackwell Angus manual EDI, when we did those some years ago, happened so infrequently, it took me maybe a year to remember how to do it, but Tim didn't lose patience, at least seemingly.
+
+Congrats on the retirement.`,
+  name: "Thomas Bennett",
+  reaction: "Statement recorded. Long-term mentorship impact confirmed."
+},
   {
     text: `It's hard to believe that we've known and worked together for over 10 years now.
 
